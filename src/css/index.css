@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "../../node_modules/@glidejs/glide/dist/css/glide.core.css";
+
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+  .splide__arrow--prev {
+    @apply !hidden
+  }
+}
+
+@layer components {
+  .input {
+    @apply card v-b text-sm rounded-lg focus:outline-none focus:ring focus:ring-blue-600 w-full p-2.5 placeholder-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-400
+  }
+  .btn {
+    @apply rounded py-2.5 px-6 text-light font-semibold bg-primary transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent text-sm hover:bg-primary/75 text-center
+  }
+
+  .flat-btn {
+    @apply rounded p-2 text-dark/75 font-semibold hover:text-dark hover:bg-accent transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent text-sm text-center
+  }
+}
+
+@layer utilities {
+  .main-container {
+    @apply max-w-[1400px] w-full px-2 sm:px-4 lg:px-6
+  }
+  .blue-underline {
+    @apply underline decoration-8 decoration-blue-600 dark:decoration-blue-400;
+  }
+  .v-b {
+    @apply border border-gray-300 dark:border-gray-600
+  }
+  .v-b-t {
+    @apply border-t border-gray-300 dark:border-gray-600
+  }
+  .v-b-b {
+    @apply border-b border-gray-300 dark:border-gray-600
+  }
+  .v-b-r {
+    @apply border-r border-gray-300 dark:border-gray-600
+  }
+  .v-b-l {
+    @apply border-l border-gray-300 dark:border-gray-600
+  }
+  .card {
+    @apply bg-gray-100 dark:bg-gray-800 dark:text-gray-200 text-gray-900
+  }
+  .card-hover {
+    @apply bg-gray-200 dark:bg-gray-700
+  }
+  .card-default {
+    @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-white
+  }
+  .text-muted {
+    @apply text-gray-600 dark:text-gray-400
+  }
+  .heading {
+    @apply text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-gray-900 dark:text-white;
+  }
+  .trans {
+    @apply transition-all duration-300;
+  }
+  .stop-scrolling {
+    @apply overflow-hidden h-[100%]
+  }
+}
+
+
+
+
+
+
+

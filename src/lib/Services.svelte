@@ -4,7 +4,7 @@
 </script>
 
 <div class="w-full overflow-hidden h-[39rem] relative">
-	<video src="/assets/video1.mp4" autoplay loop class="w-full h-full object-cover" />
+	<video src="/assets/video1.mp4" autoplay loop muted class="w-full h-full object-cover" />
 
 	<div
 		class="bg-dark/50 text-light absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center flex-col"
@@ -26,7 +26,7 @@
 	</div>
 </div>
 
-<div class="bg-primary text-light flex justify-center">
+<div id="services" class="bg-primary text-light flex justify-center scroll-m-[42rem]">
 	<div class="main-container py-12 flex items-center flex-col">
 		<h1 class="text-2xl md:text-3xl font-bold">Why Choose Us</h1>
 		<h2 class="md:text-lg">Explore our first class car rental services</h2>

@@ -4,10 +4,6 @@
 	import '../css/app.css';
 </script>
 
-<svelte:head>
-	<title>Casa Auto Diagnostic</title>
-</svelte:head>
-
 <div class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white w-full h-full">
 	<NavBar />
 

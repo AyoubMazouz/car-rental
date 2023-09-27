@@ -68,6 +68,11 @@
   .stop-scrolling {
     @apply overflow-hidden h-[100%]
   }
+  .trans-10 {
+    transition: all;
+    transition-duration: 10000;
+    animation-duration: 10000;
+  }
 }
 
 

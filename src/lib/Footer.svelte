@@ -6,12 +6,12 @@
 	let newsletter = '';
 </script>
 
-<div class="bg-dark text-accent flex flex-col items-center pt-12 pb-4">
+<div class="bg-dark text-accent flex flex-col items-center pt-12 pb-4 mt-24">
 	<div
-		class="main-container flex flex-col md:flex-row md:justify-between md:items-center gap-8 pb-12"
+		class="main-container flex flex-col lg:flex-row lg:justify-between lg:items-center gap-8 pb-12"
 	>
 		<!-- About us -->
-		<div class="max-w-[33%]">
+		<div id="about" class="lg:max-w-[33%]">
 			<h1 class="text-xl font-semibold mb-4 text-shading">About Us</h1>
 			<p class="indent-2 mb-4">
 				Getting dressed up and traveling with good friends makes for a shared, unforgettable
@@ -20,7 +20,7 @@
 			<Logo />
 		</div>
 		<!-- Contact -->
-		<div class="max-w-[33%]">
+		<div class="lg:max-w-[33%] text-sm space-y-2">
 			<h1 class="text-xl font-semibold mb-4 text-shading">Contact Info</h1>
 			<div class="flex items-center gap-x-2">
 				<Icon icon="carbon:phone" width="22px" />
@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		<!-- News Letter -->
-		<div class="space-y-2 max-w-[33%]">
+		<div class="space-y-2 lg:max-w-[33%]">
 			<h1 class="text-xl font-semibold mb-4 text-shading">Newsletter</h1>
 			<p class="">Don't miss a thing! Sign up to receive daily deals.</p>
 			<input

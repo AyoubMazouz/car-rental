@@ -86,8 +86,11 @@
 					</div>
 
 					<div class="flex justify-between p-2">
-						<div class="">
-							<h1 class="font-bold capitalize text-xl">{car.model}</h1>
+						<div class="flex flex-col items-start">
+							<h1 class="font-bold capitalize text-xl">
+								<span class="text-dark/75 uppercase">{car.brand}</span>
+								{car.model}
+							</h1>
 							<div class="flex gap-x-1 items-center justify-center">
 								{#each Array(Math.floor(car.rating)) as _, i (`rating${i}`)}
 									<Icon icon="carbon:star-filled" width="16px" class="text-primary" />
@@ -104,22 +107,26 @@
 						</h1>
 					</div>
 
-					<div class="flex sm:gap-12 flex-wrap text-xs sm:text-sm mt-2">
-						<div class="flex gap-x-12 sm:gap-x-4 p-2 w-full sm:w-auto">
-							<div class="flex flex-col items-center gap-1">
-								<Icon icon="icon-park-outline:seat" width="22px" />
-								{car.seatCount}
-							</div>
-							<div class="flex flex-col items-center gap-1">
-								<Icon icon="mdi:car-door" width="22px" />
-								{car.doorCount}
-							</div>
-							<div class="flex flex-col items-center gap-1">
-								<Icon icon="tabler:manual-gearbox" width="22px" />
-								{car.automatic ? 'Auto' : 'Manual'}
-							</div>
+					<div class="flex justify-between sm:justify-start gap-x-12 p-2 text-sm">
+						<div class="flex flex-col items-center gap-1">
+							<Icon icon="ph:armchair-thin" width="32px" />
+							{car.seatCount}
 						</div>
+						<div class="flex flex-col items-center gap-1">
+							<Icon icon="ph:door-thin" width="32px" />
+							{car.doorCount}
+						</div>
+						<div class="flex flex-col items-center gap-1">
+							<Icon icon="ph:gear-thin" width="32px" />
+							{car.automatic ? 'Auto' : 'Manual'}
+						</div>
+						<div class="flex flex-col items-center gap-1">
+							<Icon icon="ph:briefcase-metal-thin" width="32px" />
+							{car.luggageCount}
+						</div>
+					</div>
 
+					<div class="flex sm:gap-12 flex-wrap text-xs sm:text-sm mt-2">
 						<div class="space-y-2 p-2 font-light">
 							{#each car.features.slice(Math.floor(car.features.length / 2)) as feature (feature)}
 								<div class="flex gap-x-2">
